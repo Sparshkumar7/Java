@@ -11,7 +11,7 @@ public class Variable {
         int c = 993527785;
 
         //? Long (max range 9,223,372,036,854,775,807)
-        Long l= 99364883637383489l;
+        long l= 993648836373834l;
 
         //* Float (Store decimal value)
         float f= 45.89f;
