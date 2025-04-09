@@ -2,9 +2,25 @@ import java.lang.reflect.Field;
 import java.net.ServerSocket;
 import java.util.Scanner;
 import java.util.SortedMap;
+class Print{
+    String name ;
+    int age;
 
+    Print(String na , int ag ){
+        name = na;
+        age = ag;
+    }
+
+    void display(){
+        System.out.println("Name: "+ name + "  Age: "+ age);
+    }
+}
 public class Practices1 {
     public static void main(String[] args) {
+        Print Ob = new Print("mohit",23);
+        Ob.display();
+        System.out.println(Ob.getClass());
+
         //? Q1 Java Program to Print an Integer (Entered by the User)
 //        Scanner input = new Scanner(System.in);
 //        System.out.print("Enter any Number: ");
@@ -274,16 +290,20 @@ public class Practices1 {
 //        System.out.println(reverse);
 
 //*        Java Program to Calculate the Power of a Number
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter Base value: ");
-        int base = input.nextInt();
-        System.out.println("Enter Power value: ");
-        int power = input.nextInt();
-        while (power!=0){
-            base*=power;
-            power--;
-        }
-        System.out.println(base);
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Enter Base value: ");
+//        int base = input.nextInt();
+//        System.out.println("Enter Power value: ");
+//        int power = input.nextInt();
+//        while (power!=0){
+//            base*=power;
+//            power--;
+//        }
+//        System.out.println(base);
+
+        //? 16. Java Program to Add Two Complex Numbers by Passing Class to a Function
+
+
         }
     }
 
