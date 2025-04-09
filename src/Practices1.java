@@ -1,6 +1,10 @@
+import java.lang.reflect.Field;
+import java.net.ServerSocket;
 import java.util.Scanner;
+import java.util.SortedMap;
+
 public class Practices1 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         //? Q1 Java Program to Print an Integer (Entered by the User)
 //        Scanner input = new Scanner(System.in);
 //        System.out.print("Enter any Number: ");
@@ -151,11 +155,135 @@ public class Practices1 {
 //        System.out.println("Original Integer type: "+a.getClass());
 //        System.out.println("Converted String  type: "+b.getClass());
 
+//        ? 16. Java Program to convert int type variables to double
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Enter Integer value: ");
+//        int num = input.nextInt();
+//        double dou = num;
+//        System.out.println("Convert into double: "+ dou);
+//        Object a = num;
+//        Object b = dou;
+//        System.out.println("Original data type: "+ a.getClass());
+//        System.out.println("Converted data type: "+ b.getClass());
 
+//!     17. Java Program to convert double type variables to int
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Enter Double value: ");
+//        double num = input.nextDouble();
+//        int dou = (int) num;
+//        System.out.println("Convert into int: "+ dou);
+//        Object a = num;
+//        Object b = dou;
+//        System.out.println("Original data type: "+ a.getClass());
+//        System.out.println("Converted data type: "+ b.getClass());
+
+        //* 18. Java Program to convert string variables to double
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Enter String value: ");
+//        String num = input.nextLine();
+//        double dou = Double.valueOf(num);
+//        System.out.println("Convert into double: "+ dou);
+//        Object a = num;
+//        Object b = dou;
+//        System.out.println("Original data type: "+ a.getClass());
+//        System.out.println("Converted data type: "+ b.getClass());
+
+//?      19. Java Program to convert double type variables to string
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Enter double value: ");
+//        Double num = input.nextDouble();
+//        String dou = String.valueOf(num);
+//        System.out.println("Convert into string: "+ dou);
+//        Object a = num;
+//        Object b = dou;
+//        System.out.println("Original data type: "+ a.getClass());
+//        System.out.println("Converted data type: "+ b.getClass());
+
+// ?       Loops & Recursion
+// !       1. Java Program to Calculate the Sum of Natural Numbers
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Find the sum of the natural number: ");
+//        int n = input.nextInt();
+//        int sum= 0;
+//        for(int i=1; i<=n;i++){
+//            sum+=i;
+//            System.out.println(sum);
+//        }
+//        System.out.println(sum);
+//
+//  ?      2. Java Program to Find Factorial of a Number
+
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Find  Factorial: ");
+//        int f = input.nextInt();
+//        int mul= 1;
+//        for(int i=1; i<=f;i++){
+//            mul*=i;
+//           System.out.print(i+"*");
+//        }
+//        System.out.print("= "+mul);
+
+// !       3. Java Program to Generate Multiplication Table
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Generate Multiplication Table: ");
+//        int table = input.nextInt();
+//        for (int i=1; i<=10; i++){
+//            int mul = i * table;
+//            System.out.println(table +" * "+i+" = "+ mul);
+//        }
+//? Java Program to Display Fibonacci Series
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Display Fibonacci Series: ");
+//        int fib = input.nextInt();
+//        int first=0;
+//        int second=1;
+//        for (int i=0;i<fib; i++){
+//            System.out.println(first);
+//            int temp =first + second;
+//            first = second;
+//            second = temp;
+//    }
+        //? 6. Java Program to Display Alphabets (A to Z) using loop
+//        char a;
+//        for (a = 'A'; a <= 'Z'; a++) {
+//            System.out.println(a);
+//        }
+
+        //* Java Program to Count Number of Digits in an Integer
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Enter any Digits: ");
+//        int D = input.nextInt();
+//        int count=0;
+//        while (D !=0){
+//            D= D/10;
+//            count++;
+//        }
+//        System.out.println(count);
+
+        //? Java Program to Reverse a Number
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Enter any Digits: ");
+//        int inp = input.nextInt();
+//        int reverse= 0;
+//
+//        while (inp !=0) {
+//            int last = inp % 10;
+//            reverse= reverse *10+last;
+//            inp/=10;
+//        }
+//        System.out.println(reverse);
+
+//*        Java Program to Calculate the Power of a Number
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter Base value: ");
+        int base = input.nextInt();
+        System.out.println("Enter Power value: ");
+        int power = input.nextInt();
+        while (power!=0){
+            base*=power;
+            power--;
+        }
+        System.out.println(base);
+        }
     }
-}
-
-
-
-
 
