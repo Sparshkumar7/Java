@@ -300,10 +300,6 @@ public class Practices1 {
 //            power--;
 //        }
 //        System.out.println(base);
-
-        //? 16. Java Program to Add Two Complex Numbers by Passing Class to a Function
-
-
         }
     }
 
